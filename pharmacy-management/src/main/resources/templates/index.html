@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>MediNova - AI Pharmacy</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: linear-gradient(90deg,#667eea,#764ba2);
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        /* GLASS EFFECT */
+        .hero-content {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            display: inline-block;
+            border-radius: 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* BUTTON GLOW */
+        .btn-danger {
+            box-shadow: 0 0 10px #ff4d4d;
+        }
+
+        .btn-danger:hover {
+            box-shadow: 0 0 20px #ff1a1a;
+            transform: scale(1.1);
+        }
+
+        /* FEATURE CARDS */
+        .feature-card {
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar px-4">
+    <h3 class="text-white fw-bold">💊 MediNova</h3>
+
+    <div>
+        <a href="/user/login" class="btn btn-light me-2">User</a>
+        <a href="/admin/login" class="btn btn-warning">Admin</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero d-flex align-items-center text-center">
+    <div class="container">
+
+        <div class="p-5 hero-content shadow">
+            <h1 class="display-4 fw-bold">Online Pharmacy</h1>
+            <p class="lead">Order medicines easily with smart AI support 🤖</p>
+
+            <a href="/user/register" class="btn btn-danger btn-lg mt-3">Get Started</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- FEATURES -->
+<div class="container mt-5 text-center">
+
+    <hr class="my-5">
+
+    <h2 class="mb-4">Our Features</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow feature-card">
+                <img src="https://img.icons8.com/color/96/pill.png" width="80">
+                <h5 class="mt-3">Search Medicines</h5>
+                <p>Find medicines instantly using smart search</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow feature-card">
+                <img src="https://img.icons8.com/color/96/shopping-cart.png" width="80">
+                <h5 class="mt-3">Add to Cart</h5>
+                <p>Easy shopping experience with cart system</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow feature-card">
+                <img src="https://img.icons8.com/color/96/artificial-intelligence.png" width="80">
+                <h5 class="mt-3">AI Support</h5>
+                <p>Smart AI helps you find medicines faster</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="background: linear-gradient(90deg,#667eea,#764ba2);" class="text-white text-center p-3 mt-5">
+    <p>© 2026 MediNova | AI Powered Pharmacy 💊🤖</p>
+</footer>
+
+</body>
+</html>

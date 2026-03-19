@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Orders - Pharmacy Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .container { margin-top: 50px; }
+        .table-container { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .badge-online { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #bbdefb; }
+        h2 { color: #333; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>📦 My Order History</h2>
+        <a href="/user/home" class="btn btn-outline-secondary btn-sm">Back to Home</a>
+    </div>
+
+    <div class="table-container">
+        <div th:if="${#lists.isEmpty(orders)}" class="text-center py-5">
+            <h4 class="text-muted">You haven't placed any orders yet.</h4>
+            <a href="/user/medicines" class="btn btn-primary mt-3">Browse Medicines</a>
+        </div>
+
+        <table th:if="${not #lists.isEmpty(orders)}" class="table table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Order ID</th>
+                    <th>Medicine Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Order Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="order : ${orders}">
+                    <td th:text="${order.id}">1</td>
+                    <td th:text="${order.medicine.name}">Paracetamol</td>
+                    <td>₹ <span th:text="${order.medicine.price}">100</span></td>
+                    <td th:text="${order.quantity}">2</td>
+                    <td><strong>₹ <span th:text="${order.medicine.price * order.quantity}">200</span></strong></td>
+                    <td>
+                        <span class="badge badge-online" th:text="${order.saleType}">ONLINE</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

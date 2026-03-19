@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine List</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h2 class="mb-4">Medicine List</h2>
+
+    <!-- Search form -->
+    <form th:action="@{/medicine/search}" method="get" class="d-flex mb-3">
+        <input type="text" name="keyword" class="form-control me-2" placeholder="Search medicine...">
+        <button type="submit" class="btn btn-primary">Search</button>
+        <a href="/medicine/add" class="btn btn-success ms-2">Add Medicine</a>
+        <a href="/dashboard" class="btn btn-secondary ms-2">Back to Dashboard</a>
+    </form>
+
+    <!-- Medicine table -->
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="med : ${medicines}">
+                <td th:text="${med.id}"></td>
+                <td th:text="${med.name}"></td>
+                <td th:text="${med.price}"></td>
+                <td th:text="${med.quantity}"></td>
+                <td>
+                    <a th:href="@{'/medicine/edit/' + ${med.id}}" class="btn btn-warning btn-sm">Edit</a>
+                    <a th:href="@{'/medicine/delete/' + ${med.id}}" class="btn btn-danger btn-sm"
+                       onclick="return confirm('Are you sure to delete this medicine?');">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Bootstrap JS Bundle CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
