@@ -116,13 +116,13 @@ OR run from IDE (IntelliJ / Eclipse)
 <img width="1905" height="600" alt="Screenshot 2026-03-19 150220" src="https://github.com/user-attachments/assets/1df70313-565b-4c66-beb7-cd5855803d61" />
 <img width="1077" height="646" alt="admin-login" src="https://github.com/user-attachments/assets/173cfad4-c01b-4c62-8d8c-7f2575cf1e9f" />
 <img width="1812" height="566" alt="Screenshot 2026-03-19 151014" src="https://github.com/user-attachments/assets/6db35478-a7f3-4174-88ea-7619dbdf1dd9" />
-<img width="1774" height="783" alt="Screenshot 2026-03-19 151143" src="https://github.com/user-attachments/assets/5bc8aba6-46bf-4540-8ff8-5be6b2c48aad" />
+<img width="1774" height="783" alt="all records" src="https://github.com/user-attachments/assets/ecbc195e-a043-495e-b862-3147462401ce" />
 <img width="1737" height="767" alt="Screenshot 2026-03-19 151049" src="https://github.com/user-attachments/assets/a00c2039-5713-435c-ba9e-ef7d0c75d006" />
 <img width="1919" height="870" alt="Screenshot 2026-03-19 150307" src="https://github.com/user-attachments/assets/cd51691c-c1ca-451f-ab9b-4509ee071990" />
 <img width="1839" height="820" alt="Screenshot 2026-03-19 150409" src="https://github.com/user-attachments/assets/f8ed8856-0fd4-497c-8b99-e6f90a2db73d" />
 <img width="1871" height="874" alt="Screenshot 2026-03-19 150510" src="https://github.com/user-attachments/assets/dd7ac216-c4df-4c39-9911-c52e80be866d" />
 <img width="1837" height="643" alt="Screenshot 2026-03-19 150550" src="https://github.com/user-attachments/assets/24cfcb98-8e28-4117-9fe5-8b21160322aa" />
-<img width="1639" height="848" alt="Screenshot 2026-03-19 150646" src="https://github.com/user-attachments/assets/b8d9ba8f-79c4-40ce-a6af-50bd7f22ea78" />
+<img width="1639" height="848" alt="checkout" src="https://github.com/user-attachments/assets/1765a015-9fec-468f-8f52-c7c22ed4f794" />
 <img width="1765" height="501" alt="Screenshot 2026-03-19 150838" src="https://github.com/user-attachments/assets/2c57244f-1895-465b-a731-023f108f6f27" />
 
 ---
