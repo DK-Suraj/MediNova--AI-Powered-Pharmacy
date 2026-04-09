@@ -112,9 +112,8 @@ OR run from IDE (IntelliJ / Eclipse)
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot (12)" src="https://github.com/user-attachments/assets/f65189a7-3a6d-41e3-ae8d-8b9dba171164" />
+<img width="1901" height="859" alt="Screenshot 2026-03-19 150026" src="https://github.com/user-attachments/assets/52ba2243-e2a5-42d2-b373-0f4b5d11d3a9" />
 <img width="1905" height="600" alt="Screenshot 2026-03-19 150220" src="https://github.com/user-attachments/assets/1df70313-565b-4c66-beb7-cd5855803d61" />
-
 <img width="1077" height="646" alt="admin-login" src="https://github.com/user-attachments/assets/173cfad4-c01b-4c62-8d8c-7f2575cf1e9f" />
 <img width="1812" height="566" alt="Screenshot 2026-03-19 151014" src="https://github.com/user-attachments/assets/6db35478-a7f3-4174-88ea-7619dbdf1dd9" />
 <img width="1774" height="783" alt="Screenshot 2026-03-19 151143" src="https://github.com/user-attachments/assets/5bc8aba6-46bf-4540-8ff8-5be6b2c48aad" />
